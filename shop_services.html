@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="logo2.ico">
+	<meta http-equiv="content-type" content="text/html charset=UTF-8" />
+	<title>Bodya secret</title>
+ 	<link rel="stylesheet" href="shop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="e1">
+    <div class="e2">
+      <a href="shop_main.html"><img class="header_logo" src="imgs/header6.png" alt="Logo"></a>
+    </div>
+    <nav class="e3">
+      <ul class="e5 topmenu">
+        <li><a href="shop_main.html">Главная</a>
+          <ul class="submenu">
+            <li><a href="">Вариант 1</a></li>
+            <li><a href="">Вариант 2</a></li>
+            <li><a href="">Вариант 3</a></li>
+            <li><a href="">Вариант 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#" style="color: white;">Услуги</a>
+          <ul class="submenu">
+            <li><a href="">Вариант 1</a></li>
+            <li><a href="">Вариант 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="shop_contacts.html">Связь</a></li>
+      </ul>
+    </nav>
+    <div class="e4">
+      <input type="text" name="search" value="" placeholder="Поиск" autocomplete="off">
+    </div>
+      <div class="search_mobile">
+        <input type="text" name="search_mobile" value="" placeholder="Поиск" autocomplete="off">
+      </div>
+	</header>
+  <main>
+    <div id="form"><br>
+      <h1>Запись на личный подбор вещей</h1><br>
+      <div style="margin: 10px;">
+        *Фамилия <input id="surname_imput" type="text" onchange  = "surname_imput()" required/><br>
+        <spam id = "text_mistake_surname" style = "display: none; color: #800000; margin-left: 75px;">Недопустимое значение</spam>
+      </div>
+      <div style="margin: 10px;">
+        *Имя <input id="name_imput" type="text" onchange  = "name_imput()" required /><br>
+        <spam id = "text_mistake_name" style = "display: none; color: #800000; margin-left: 45px;">Недопустимое значение</spam>
+      </div>
+      <div style="margin: 10px;">
+        Отчество <input id="patronymic_imput" type="text" onchange  = "patronymic_imput()"/><br>
+        <spam id = "text_mistake_patronymic" style = "display: none; color: #800000; margin-left: 75px;">Недопустимое значение</spam></div>
+      <div style="margin: 10px;">
+        *Номер телефона <input id="phone_imput" type="text" onchange  = "phone_imput()" placeholder="8-800-555-35-35" required/><br>
+        <spam id = "text_mistake_phone" style = "display: none; color: #800000; margin-left: 140px;">Недопустимое значение</spam></div>
+      <div style="margin: 10px;">
+        *Дата <input id="date_imput" type="date" onchange  = "date_imput()" required />
+        *Время <input id="time_imput" list="_time" type="text" onchange  = "time_imput()" placeholder="Выберите время" required/>
+      </div>
+    <datalist id="_time">
+      <option value = "9:30"></option>
+      <option value = "10:00"></option>
+      <option value = "10:30"></option>
+      <option value = "11:00"></option>
+      <option value = "12:00"></option>
+      <option value = "12:30"></option>
+      <option value = "13:00"></option>
+      <option value = "13:30"></option>
+      <option value = "14:30"></option>
+      <option value = "16:00"></option>
+      <option value = "16:30"></option>
+      <option value = "18:00"></option>
+    </datalist>
+    <!-- <div>
+      *Услуга<input id="service_imput" list="_test" type="text" onchange  = "service_imput()" placeholder="Выберите услугу" required />
+      <datalist id="_test">
+        <option value = "Столик на одного у окна"></option>
+        <option value = "Столик на двоих у окна"></option>
+        <option value = "Стол на троих-четверых"></option>
+        <option value = "Стол на пятерых-восьмерых"></option>
+      </datalist>
+    </div> -->
+    <input style="margin: 5px 10px; padding: 5px 20px; border-radius: 20px;" id = "submit_1" class = "submit" type="submit" value="Записаться" onClick='cheak_info()'/>
+    <input style="margin: 5px 10px; padding: 5px 20px; border-radius: 20px;" id = "submit_2" class = "submit" type="reset" value="Очистить" onClick='reset()'/>
+</div>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="shop_main.html">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#" style="color: white;">Услуги</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="shop_contacts.html">Связь</a></li>
+      </ul>
+    </nav>
+  </footer>
+   <div id = "blur"></div>
+    <div id = "blur_window">
+        <div style="font-size: 50px; text-align: right; padding-right: 20px;">
+        <button id ="close_window" type="button" style="border: 0px;" onclick = "close_window()">
+            <img src="imgs/close.jpg" width="40px"></button></div>
+
+        <div style="font-size: 30px; text-align: center;">Заказ успешно оформлен</div>
+    </div>
+  <script src="shop_services.js"></script>
+</body>
+</html>
