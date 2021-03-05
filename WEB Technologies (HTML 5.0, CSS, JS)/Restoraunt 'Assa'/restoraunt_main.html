@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html charset=UTF-8"/>
+  <title>Ресторан "Асса"</title>
+  <link rel="stylesheet" href="restoraunt.css">
+</head>
+<body>
+  <header class="e1">
+    <div class="e2">
+      <a href="#"><img class="header_logo" src="imgs/header6.png" alt="Logo"></a>
+    </div>
+    <nav class="e3">
+      <ul class="e5 topmenu">
+        <li><a href="#" style="color:red;">Главная</a></li>
+        <li><a href="restoraunt_services.html">Услуги</a>
+          <ul class="submenu">
+            <li><a href="">Бронь столика</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Кухни</a></li>
+        <li><a href="restoraunt_contacts.html">Контакты</a>
+          <ul class="submenu">
+            <li><a href="">Номера</a></li>
+            <li><a href="">Почта</a></li>
+            <li><a href="">Локация</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="e4">
+      <input type="text" name="search" value="" placeholder="Поиск" autocomplete="off">
+    </div>
+  </header>
+  <main>
+    <div class="overslider">
+        <div class="slider">
+            <div class="slide">
+                <img src="imgs/slider_1.jpg">
+            </div>
+            <div class="slide">
+                <img src="imgs/slider_2.jpg">
+            </div>
+            <div class="slide">
+                <img src="imgs/slider_3.jpg">
+            </div>
+            <div class="slide">
+                <img src="imgs/slider_4.jpg">
+            </div>
+            <img class="previous" onclick="previousSlide()" src="imgs/previous.png">
+            <img class="next" onclick="nextSlide()" src="imgs/next.png">
+            
+        </div>       
+        <div class="controls">
+              <label for="switch1" class="dot" onclick="currentSlide(1)"></label>
+              <label for="switch2" class="dot" onclick="currentSlide(2)"></label>
+              <label for="switch3" class="dot" onclick="currentSlide(3)"></label>
+              <label for="switch4" class="dot" onclick="currentSlide(4)"></label>
+            </div>
+    </div>
+
+    <div class="advantages_container">
+      <div class="advantages">
+        <div class="advantages_item ai1">
+          <img src="imgs/meal1.jpg" width="200px">
+          <h2>Большой стейк</h2>
+        </div>
+        <div class="advantages_item ai2">
+          <img src="imgs/meal2.jpg" width="200px">
+          <h2>Средний стейк</h2>
+        </div>
+        <div class="advantages_item ai3">
+          <img src="imgs/meal2.jpg" width="200px">
+          <h2>Средний стейк</h2>
+        </div><div class="advantages_item ai4">
+          <img src="imgs/meal2.jpg" width="200px">
+          <h2>Средний стейк</h2>
+        </div>
+        <div class="advantages_item ai5">
+          <img src="imgs/meal2.jpg" width="200px">
+          <h2>Средний стейк</h2>
+        </div>
+        <div class="advantages_item ai6">
+          <img src="imgs/meal1.jpg" width="200px">
+          <h2>Большой стейк</h2>
+        </div>
+        <div class="advantages_item ai7">
+          <img src="imgs/meal1.jpg" width="200px">
+          <h2>Большой стейк</h2>
+        </div>
+        <div class="advantages_item ai8">
+          <img src="imgs/meal1.jpg" width="200px">
+          <h2>Большой стейк</h2>
+        </div>
+        <div class="advantages_item ai9">
+          <img src="imgs/meal3.jpg" width="200px">
+          <h2>Сверхбольшой стейк</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#" style="color:red;">Главная</a></li>
+        <li><a href="restoraunt_services.html">Услуги</a></li>
+        <li><a href="#">Кухни</a></li>
+        <li><a href="restoraunt_contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="restoraunt_slider.js"></script>
+</body>
+</html>
